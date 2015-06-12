@@ -1,0 +1,34 @@
+---- HAL_UART_DMA_RX_MAX Matches (33 in 2 files) ----
+_hal_uart_dma.c (components\hal\target\cc2540eb):#if !defined HAL_UART_DMA_RX_MAX
+_hal_uart_dma.c (components\hal\target\cc2540eb):#define HAL_UART_DMA_RX_MAX        512
+_hal_uart_dma.c (components\hal\target\cc2540eb):#define HAL_UART_DMA_TX_MAX        HAL_UART_DMA_RX_MAX
+_hal_uart_dma.c (components\hal\target\cc2540eb):#define HAL_UART_DMA_HIGH         (HAL_UART_DMA_RX_MAX - 1)
+_hal_uart_dma.c (components\hal\target\cc2540eb):#define HAL_UART_DMA_FULL         (HAL_UART_DMA_RX_MAX - 16)
+_hal_uart_dma.c (components\hal\target\cc2540eb):#if HAL_UART_DMA_RX_MAX <= 256
+_hal_uart_dma.c (components\hal\target\cc2540eb):  uint16 rxBuf[HAL_UART_DMA_RX_MAX];
+_hal_uart_dma.c (components\hal\target\cc2540eb):#if HAL_UART_DMA_RX_MAX == 256
+_hal_uart_dma.c (components\hal\target\cc2540eb):    (IDX) = HAL_UART_DMA_RX_MAX-1; \
+_hal_uart_dma.c (components\hal\target\cc2540eb):#if HAL_UART_DMA_RX_MAX == 256
+_hal_uart_dma.c (components\hal\target\cc2540eb):  if (++(IDX) >= HAL_UART_DMA_RX_MAX) \
+_hal_uart_dma.c (components\hal\target\cc2540eb):  HAL_DMA_SET_LEN( ch, HAL_UART_DMA_RX_MAX );
+_hal_uart_dma.c (components\hal\target\cc2540eb):  (void)memset(dmaCfg.rxBuf, (DMA_PAD ^ 0xFF), HAL_UART_DMA_RX_MAX*2);
+_hal_uart_dma.c (components\hal\target\cc2540eb):        (void)memset(dmaCfg.rxBuf, (DMA_PAD ^ 0xFF), HAL_UART_DMA_RX_MAX*2);
+_hal_uart_dma.c (components\hal\target\cc2540eb):        cnt = HAL_UART_DMA_RX_MAX;
+_hal_uart_dma.c (components\hal\target\cc2540eb):  else if (cnt > HAL_UART_DMA_RX_MAX)  // If the tail has wrapped at the end of the Rx queue.
+_hal_uart_dma.c (components\hal\target\cc2540eb):    cnt += HAL_UART_DMA_RX_MAX;
+_hal_uart_dma.c (components\hal\target\cc2540usb):#if !defined HAL_UART_DMA_RX_MAX
+_hal_uart_dma.c (components\hal\target\cc2540usb):#define HAL_UART_DMA_RX_MAX        256
+_hal_uart_dma.c (components\hal\target\cc2540usb):#define HAL_UART_DMA_TX_MAX        HAL_UART_DMA_RX_MAX
+_hal_uart_dma.c (components\hal\target\cc2540usb):#define HAL_UART_DMA_HIGH         (HAL_UART_DMA_RX_MAX - 1)
+_hal_uart_dma.c (components\hal\target\cc2540usb):#define HAL_UART_DMA_FULL         (HAL_UART_DMA_RX_MAX - 16)
+_hal_uart_dma.c (components\hal\target\cc2540usb):#if HAL_UART_DMA_RX_MAX <= 256
+_hal_uart_dma.c (components\hal\target\cc2540usb):#if HAL_UART_DMA_RX_MAX == 256
+_hal_uart_dma.c (components\hal\target\cc2540usb):    (IDX) = HAL_UART_DMA_RX_MAX-1; \
+_hal_uart_dma.c (components\hal\target\cc2540usb):#if HAL_UART_DMA_RX_MAX == 256
+_hal_uart_dma.c (components\hal\target\cc2540usb):  if (++(IDX) >= HAL_UART_DMA_RX_MAX) \
+_hal_uart_dma.c (components\hal\target\cc2540usb):  HAL_DMA_SET_LEN( ch, HAL_UART_DMA_RX_MAX );
+_hal_uart_dma.c (components\hal\target\cc2540usb):  (void)memset(dmaCfg.rxBuf, (DMA_PAD ^ 0xFF), HAL_UART_DMA_RX_MAX*2);
+_hal_uart_dma.c (components\hal\target\cc2540usb):        (void)memset(dmaCfg.rxBuf, (DMA_PAD ^ 0xFF), HAL_UART_DMA_RX_MAX*2);
+_hal_uart_dma.c (components\hal\target\cc2540usb):        cnt = HAL_UART_DMA_RX_MAX;
+_hal_uart_dma.c (components\hal\target\cc2540usb):  else if (cnt > HAL_UART_DMA_RX_MAX)  // If the tail has wrapped at the end of the Rx queue.
+_hal_uart_dma.c (components\hal\target\cc2540usb):    cnt += HAL_UART_DMA_RX_MAX;

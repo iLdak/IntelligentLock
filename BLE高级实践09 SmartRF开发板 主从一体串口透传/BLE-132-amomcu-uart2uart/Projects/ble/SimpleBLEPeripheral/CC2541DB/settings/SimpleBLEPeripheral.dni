@@ -1,0 +1,45 @@
+[DebugChecksum]
+Checksum=88960225
+[DisAssemblyWindow]
+NumStates=_ 1
+State 1=_ 1
+[InstructionProfiling]
+Enabled=_ 0
+[CodeCoverage]
+Enabled=_ 0
+[StackPlugin]
+Enabled=1
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnHow=0
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Breakpoints]
+Count=0
+[ChipconEmu]
+Stop timers on halt=0
+Leave target running=1
+[Aliases]
+A0=_ "C:\Texas Instruments\BLE-132-ZCYT\Components\osal\common\OSAL_PwrMgr.c" ""
+A1=_ "C:\Texas Instruments\BLE-132-ZCYT\Projects\ble\Profiles\Roles\gap.c" ""
+A2=_ "G:\BLE\BLE-132-amomcu-uart2uart\Components\hal\target\CC2540EB\hal_aes.c" ""
+A3=_ "G:\BLE\BLE-132-amomcu-uart2uart\Components\hal\target\CC2540EB\hal_startup.c" ""
+A4=_ "G:\BLE\BLE-132-amomcu-uart2uart\Components\osal\common\OSAL.c" ""
+A5=_ "G:\BLE\BLE-132-amomcu-uart2uart\Components\osal\common\OSAL_PwrMgr.c" ""
+A6=_ "G:\BLE\BLE-132-amomcu-uart2uart\Components\osal\mcu\cc2540\osal_snv.c" ""
+A7=_ "G:\BLE\BLE-132-amomcu-uart2uart\Projects\ble\Profiles\DevInfo\devinfoservice.c" ""
+A8=_ "G:\BLE\BLE-132-amomcu-uart2uart\Projects\ble\Profiles\Roles\gap.c" ""
+A9=_ "G:\BLE\BLE-132-amomcu-uart2uart\Projects\ble\Profiles\Roles\peripheral.c" ""
+A10=_ "G:\BLE\BLE-132-amomcu-uart2uart\Projects\ble\SimpleBLEPeripheral\Source\SimpleBLEPeripheral_Main.c" ""
+Count=11
+SuppressDialog=0
